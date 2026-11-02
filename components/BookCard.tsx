@@ -12,7 +12,6 @@ import { Book, Status } from "../lib/books";
 //   - the badge: {book.status}
 //   - the title: {book.title}
 //   - the author: {book.author}
-//   - show "✓ Done" ONLY when book.status is Status.Finished
 // Remember: in JSX the attribute is className (NOT class), and JavaScript goes in { }.
 export default function BookCard({ book }) {
   return (
@@ -20,7 +19,6 @@ export default function BookCard({ book }) {
       <span className="badge">{/* status here */}</span>
       <span className="title">{/* title here */}</span>
       <span>{/* author here */}</span>
-      {/* show "✓ Done" here only when the book is finished */}
     </li>
   );
 }
