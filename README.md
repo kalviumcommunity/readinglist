@@ -1,29 +1,26 @@
 # ReadingList - Starter (Next.js + TypeScript)
 
-A small reading list app. The layout, styling, data, and build setup are already done.
+A small reading list app. The layout, styling, data, book card, and build setup are already done.
 You complete 4 tasks, then zip the project.
 
 ## Run it
 
 ```bash
 npm install
-npm run dev     # open http://localhost:3000 - the home page already shows 3 books
+npm run dev     # open http://localhost:3000 (the home page is blank until Task 4 is done)
 npm run build   # must finish with 0 errors once all tasks are done
 ```
-
-`npm run build` runs the TypeScript checker, so it only passes after you finish the tasks.
 
 ## Where you work
 
 | File | Task |
 |------|------|
-| `app/about/page.tsx` (new file) | Task 1a - About page |
-| `app/layout.tsx` | Task 1b - navigation links |
-| `app/reading/page.tsx` (new file) | Task 2 - Reading now page |
-| `components/BookCard.tsx` | Task 3 - typed props and card JSX |
-| `app/page.tsx` | Task 4 - add-book form |
+| `app/about/page.tsx` (new file) | Task 1 - About page |
+| `app/books/page.tsx` (new file) | Task 2 - Books page |
+| `app/layout.tsx` | Task 3 - navigation links |
+| `app/page.tsx` | Task 4 - home page summary |
 
-Do not edit the CSS, `tsconfig.json`, `next.config.mjs`, or `lib/books.ts`.
+Do not edit the CSS, `tsconfig.json`, `next.config.mjs`, `lib/books.ts`, or `components/BookCard.tsx`.
 Do not use `any`.
 
 ## Submit
