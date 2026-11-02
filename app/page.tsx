@@ -22,6 +22,7 @@ export default function HomePage() {
             - create a new book with id = nextId (then add one to nextId), the trimmed title,
               author "Unknown", and status Status.Unread
             - set books to a new array that holds the old books and the new book, using setBooks
+              Hint: [...books, newBook] makes a new array with the old books, then the new book.
             - clear the box, using setTitle */}
       <form className="add-form" onSubmit={(e) => {}}>
         {/* TODO (Task 4b - controlled input): add two attributes to this input:
