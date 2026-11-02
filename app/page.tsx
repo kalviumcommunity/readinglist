@@ -16,17 +16,17 @@ export default function HomePage() {
       <h1>ReadingList</h1>
       <p className="muted">{books.length} books</p>
 
-      {/* TODO (Task 5c - form submit): replace the empty handler below. When submitted:
-            1. call e.preventDefault() so the page does not reload
-            2. if title.trim() is an empty string, just return
-            3. build a new book:
-                 { id: nextId++, title: title.trim(), author: "Unknown", status: Status.Unread }
-               and add it with:  setBooks([...books, newBook])
-            4. clear the box with:  setTitle("")  */}
+      {/* TODO (Task 4a - form submit): replace the empty handler below. When submitted:
+            - stop the page from reloading
+            - do nothing if the title is empty after removing spaces at the start and end
+            - create a new book with id = nextId (then add one to nextId), the trimmed title,
+              author "Unknown", and status Status.Unread
+            - set books to a new array that holds the old books and the new book, using setBooks
+            - clear the box, using setTitle */}
       <form className="add-form" onSubmit={(e) => {}}>
-        {/* TODO (Task 5d - controlled input): add two attributes to this input:
-               value={title}
-               onChange={(e) => setTitle(e.target.value)} */}
+        {/* TODO (Task 4b - controlled input): add two attributes to this input:
+               - value should come from title
+               - onChange should update title from the input's current value */}
         <input className="search" placeholder="Add a book title…" />
         <button type="submit" className="btn">Add</button>
       </form>

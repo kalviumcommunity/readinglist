@@ -11,11 +11,11 @@ export default function RootLayout({
         <header className="site-header">
           <span className="logo">✓</span>
           <span>ReadingList</span>
-          {/* TODO (Task 2 - layout navigation): add three links inside this header:
-                <a href="/">Books</a>
-                <a href="/reading">Reading now</a>
-                <a href="/about">About</a>
-              They must sit in this shared layout, so every page shows them. */}
+          {/* TODO (Task 1b - navigation links): add three links inside this header, each written as an <a href="..."> tag:
+                Books → /
+                Reading now → /reading
+                About → /about
+              They sit in this shared layout, so every page shows them. */}
         </header>
         <div className="container">{children}</div>
       </body>

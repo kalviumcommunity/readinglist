@@ -1,18 +1,12 @@
 import { Book, Status } from "../lib/books";
 
-// TODO (Task 4 - typed props): this component receives ONE book as a prop.
-// Define a props type and use it on the parameter:
+// TODO (Task 3a - typed props): this component receives ONE book as a prop.
+// Define a props type with one field, book, of type Book.
+// Use that props type as the type of the parameter below. Do not use any.
 //
-//   type BookCardProps = { book: Book };
-//   export default function BookCard({ book }: BookCardProps) { ... }
-//
-// Right now the parameter has no type. Add the type.
-//
-// TODO (Task 4 - JSX): fill the marked spots inside the returned JSX.
-//   - the badge: {book.status}
-//   - the title: {book.title}
-//   - the author: {book.author}
-// Remember: in JSX the attribute is className (NOT class), and JavaScript goes in { }.
+// TODO (Task 3b - JSX): fill the three empty spots in the returned JSX with the
+// book's status, title, and author. In JSX the attribute is className (NOT class),
+// and JavaScript goes inside { }.
 export default function BookCard({ book }) {
   return (
     <li className={book.status === Status.Finished ? "task done" : "task"}>
