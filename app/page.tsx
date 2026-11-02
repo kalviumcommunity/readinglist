@@ -8,15 +8,8 @@ import BookCard from "../components/BookCard";
 let nextId = 4;
 
 export default function HomePage() {
-  // TODO (Task 5a - useState): keep the list of books in state, starting from seedBooks,
-  // so the screen updates when a book is added. Replace this line with:
-  //   const [books, setBooks] = useState<Book[]>(seedBooks);
-  const books: Book[] = seedBooks;
-
-  // TODO (Task 5b - useState): keep the text typed in the box in state.
-  // Replace this line with:
-  //   const [title, setTitle] = useState("");
-  const title = "";
+  const [books, setBooks] = useState<Book[]>(seedBooks);
+  const [title, setTitle] = useState("");
 
   return (
     <section>
