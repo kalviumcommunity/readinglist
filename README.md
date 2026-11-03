@@ -20,7 +20,7 @@ npm run build   # must finish with 0 errors once all tasks are done
 | `app/layout.tsx` | Task 3 - navigation links |
 | `app/page.tsx` | Task 4 - home page summary |
 
-Do not edit the CSS, `tsconfig.json`, `next.config.mjs`, `lib/books.ts`, or `components/BookCard.tsx`.
+Do not edit the CSS, `tsconfig.json`, `next.config.mjs`, `app/books/data.ts`, or `app/books/BookCard.tsx`.
 Do not use `any`.
 
 ## Submit

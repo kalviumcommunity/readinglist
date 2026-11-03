@@ -11,7 +11,8 @@ export default function RootLayout({
         <header className="site-header">
           <span className="logo">✓</span>
           <span>ReadingList</span>
-          {/* TODO (Task 3 - navigation links): add three links inside this header, each written as an <a href="..."> tag:
+          {/* TODO (Task 3 - navigation links): at the top of this file, add: import Link from "next/link";
+                Then add three Link elements inside this header, written as <Link href="...">Label</Link>:
                 Home → /
                 Books → /books
                 About → /about

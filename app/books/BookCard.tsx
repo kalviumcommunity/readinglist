@@ -1,4 +1,4 @@
-import { Book, Status } from "../lib/books";
+import { Book } from "./data";
 
 type BookCardProps = {
   book: Book;
@@ -6,7 +6,7 @@ type BookCardProps = {
 
 export default function BookCard({ book }: BookCardProps) {
   return (
-    <li className={book.status === Status.Finished ? "task done" : "task"}>
+    <li className={book.status === "Finished" ? "task done" : "task"}>
       <span className="badge">{book.status}</span>
       <span className="title">{book.title}</span>
       <span>{book.author}</span>
